@@ -1890,7 +1890,7 @@ class _AboutState extends State<_About> {
           child: SingleChildScrollView(
             controller: scrollController,
             physics: DraggableNeverScrollableScrollPhysics(),
-            child: _Card(title: translate('About RustDesk'), children: [
+            child: _Card(title: translate('Sobre PolloDesd'), children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -1898,7 +1898,7 @@ class _AboutState extends State<_About> {
                     height: 8.0,
                   ),
                   SelectionArea(
-                      child: Text('${translate('Version')}: $version')
+                      child: Text('1.3.1 (CERO edition)')
                           .marginSymmetric(vertical: 4.0)),
                   SelectionArea(
                       child: Text('${translate('Build Date')}: $buildDate')
