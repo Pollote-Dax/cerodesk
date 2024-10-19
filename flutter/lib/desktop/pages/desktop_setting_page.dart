@@ -1890,7 +1890,7 @@ class _AboutState extends State<_About> {
           child: SingleChildScrollView(
             controller: scrollController,
             physics: DraggableNeverScrollableScrollPhysics(),
-            child: _Card(title: translate('Sobre PolloDesk'), children: [
+            child: _Card(title: translate('Acerca de CeroDesk'), children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -1898,7 +1898,7 @@ class _AboutState extends State<_About> {
                     height: 8.0,
                   ),
                   SelectionArea(
-                      child: Text('1.3.1 (CERO edition)')
+                      child: Text('1.3.1 (CERO edition) master')
                           .marginSymmetric(vertical: 4.0)),
                   SelectionArea(
                       child: Text('${translate('Build Date')}: $buildDate')
@@ -1909,7 +1909,7 @@ class _AboutState extends State<_About> {
                             .marginSymmetric(vertical: 4.0)),
                   InkWell(
                       onTap: () {
-                        launchUrlString('https://rustdesk.com/privacy.html');
+                        launchUrlString('https://cero.cat');
                       },
                       child: Text(
                         translate('Privacy Statement'),
@@ -1917,7 +1917,7 @@ class _AboutState extends State<_About> {
                       ).marginSymmetric(vertical: 4.0)),
                   InkWell(
                       onTap: () {
-                        launchUrlString('https://rustdesk.com');
+                        launchUrlString('https://cero.cat');
                       },
                       child: Text(
                         translate('Website'),
@@ -1935,11 +1935,11 @@ class _AboutState extends State<_About> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Copyright © ${DateTime.now().toString().substring(0, 4)} Purslane Ltd.\n$license',
+                                'Copyright © ${DateTime.now().toString().substring(0, 4)} Purslane Ltd. Tuneado por Cero\n$license',
                                 style: const TextStyle(color: Colors.white),
                               ),
                               Text(
-                                translate('Slogan_tip'),
+                                'Conectar y ayudar.',
                                 style: TextStyle(
                                     fontWeight: FontWeight.w800,
                                     color: Colors.white),
